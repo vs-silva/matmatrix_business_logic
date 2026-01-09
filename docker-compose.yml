@@ -1,0 +1,12 @@
+services:
+  logic-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mat-matrix-core
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run test:watch
