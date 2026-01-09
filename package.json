@@ -1,14 +1,18 @@
 {
   "name": "matmatrix_business_logic",
   "version": "1.0.0",
-  "description": "",
+  "description": "Core Domain Logic for MatMatrix Ecosystem",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "rm -rf dist && tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
-  "dependencies": {},
   "devDependencies": {
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "vitest": "^1.6.0",
+    "@types/node": "^20.0.0"
   },
   "private": true
 }
